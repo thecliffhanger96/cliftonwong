@@ -1,56 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">    
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
-    <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-</head>
-<body>
-    <nav id="top" class="site-navigation">
-        <div class="inner">
-            <button id="menu-toggle" aria-expanded="false">Menu</button>
-            <div class="nav-menu">
-                <ul class="menu">
-                {% for link in site.navigation %}
-                  {% assign current = nil %}
-                  {% if page.url == link.url %}
-                    {% assign current = 'nav-current' %}
-                  {% endif %}
-                  <li class="{{ current }}">
-                    <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
-                  </li>
-                {% endfor %}
-                </ul>        
-            </div><!-- .nav-menu -->
-            <a class="subscribe-button fa-feed square fill-horizontal" href="{{site.baseurl}}/feed.xml"><span class="screen-reader-text">Subscribe</span></a>
-        </div><!-- .inner -->
-    </nav><!-- .site-navigation -->
-    <header class="site-header">
-        <div class="inner">
-            <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
-            <p class="site-description">{{site.tagline}}</p>
-        </div><!-- .inner -->
-    </header>
-    {{content}}
-    {% include footer.html %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
@@ -85,10 +35,46 @@
 </head>
 <body>
 
+	<!-- Navigation start -->
 
+	<header class="header">
 
-	
+		<nav class="navbar navbar-custom">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">XCENT</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">home</a></li>
+						<li><a href="#portfolio">Works</a></li>
+						<li><a href="#services">Service</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#testimonial">Testimonial</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
 	{{content}}
+	
 	{% include footer.html %}
 
 	<!-- Javascript files -->
