@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">    
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title> 
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+    <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+    <nav id="top" class="site-navigation">
+        <div class="inner">
+            <button id="menu-toggle" aria-expanded="false">Menu</button>
+            <div class="nav-menu">
+                <ul class="menu">
+                {% for link in site.navigation %}
+                  {% assign current = nil %}
+                  {% if page.url == link.url %}
+                    {% assign current = 'nav-current' %}
+                  {% endif %}
+                  <li class="{{ current }}">
+                    <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                  </li>
+                {% endfor %}
+                </ul>        
+            </div><!-- .nav-menu -->
+            <a class="subscribe-button fa-feed square fill-horizontal" href="{{site.baseurl}}/feed.xml"><span class="screen-reader-text">Subscribe</span></a>
+        </div><!-- .inner -->
+    </nav><!-- .site-navigation -->
+    <header class="site-header">
+        <div class="inner">
+            <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+            <p class="site-description">{{site.tagline}}</p>
+        </div><!-- .inner -->
+    </header>
+    {{content}}
+    {% include footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="{{ site.baseurl }}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	<!-- Font Awesome CSS -->
+	<link href="{{ site.baseurl }}/assets/css/all.css" rel="stylesheet" media="screen">
+
+	<!--[if lte IE 7]> 
+		<script src="assets/js/icons-lte-ie7.js"></script>
+	<![endif]-->
+
+	<!-- Magnific-popup lightbox -->
+	<link href="{{ site.baseurl }}/assets/css/magnific-popup.css" rel="stylesheet">
+
+	<!-- Owl Carousel -->
+	<link href="{{ site.baseurl }}/assets/css/owl.theme.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}/assets/css/owl.carousel.css" rel="stylesheet">
+
+	<!-- Animate css -->
+	<link href="{{ site.baseurl }}/assets/css/animate.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+
+
+	
+	{{content}}
+	{% include footer.html %}
+
+	<!-- Javascript files -->
+
+	<script src="{{ site.baseurl }}assets/js/jquery-1.11.1.min.js"></script>
+	<script src="{{ site.baseurl }}assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="{{ site.baseurl }}assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="{{ site.baseurl }}assets/js/imagesloaded.pkgd.js"></script>
+	<script src="{{ site.baseurl }}assets/js/jquery.shuffle.min.js"></script>
+	<script src="{{ site.baseurl }}assets/js/owl.carousel.min.js"></script>
+	<script src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
+	<script src="{{ site.baseurl }}assets/js/jquery.sticky.js"></script>
+	<script src="{{ site.baseurl }}assets/js/smoothscroll.js"></script>
+	<script src="{{ site.baseurl }}assets/js/wow.min.js"></script>
+
+	<!-- Google Map js -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg "></script>
+	<script src="{{ site.baseurl }}assets/js/map.js"></script>
+	<!-- Custom scripts -->
+	<script src="{{ site.baseurl }}assets/js/custom.js"></script>
+	<script src="{{ site.baseurl }}assets/js/custom-shuffle-init.js"></script>
+
+</body>
+</html>
