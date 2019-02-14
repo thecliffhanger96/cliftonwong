@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Review: A Week With the Apple Watch"
-date:   2016-03-22
-banner_image: Apple-Watch.jpg
-tags: [minimal, tech, industrial design]
+title:  "A Week With the Apple Watch"
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim..."
+date:   2019-01-20
+banner_preview: blog2.jpg
+banner_image: blog-banner.jpg
+category: Design
+tags: [minimal, tech, industrial design, fashion]
 ---
 The **Apple Watch** is a smartwatch developed by [Apple Inc](http://www.apple.com/). It incorporates fitness tracking and health-oriented capabilities as well as integration with iOS and other Apple products and services. The device is available in four variants: Apple Watch Sport, Apple Watch, Apple Watch Hermès, and Apple Watch Edition. The Watch is distinguished by different combinations of cases and first or third party interchangeable bands. Apple Watch relies on a wirelessly connected iPhone to perform many of its default functions such as calling and texting. It is compatible with the iPhone 5 or later models running iOS 8.2 or later, through the use of Bluetooth or Wi-Fi. 
 
@@ -16,7 +19,7 @@ Announced by Tim Cook on September 9, 2014, the device was available for pre-ord
 
 Rumors surrounded an Apple-developed wearable back as far as 2011, which conceptualized the device as a variation of the iPod that would curve around the user's wrist, and feature Siri integration. On February 10, 2013, both The New York Times and The Wall Street Journal reported that Apple was beginning to develop an iOS-based smartwatch with a curved display. On February 12, 2013, Bloomberg reported that Apple's smartwatch project was "beyond the experimentation phase in its development", and had a team of at least 100 designers were working on the project. Further reports in March 2013 indicated that Apple planned to release the device by the end of the year. In July 2013, Financial Times reported that Apple had begun hiring more employees to work on the smartwatch, and that it was targeting a possible retail release in late 2014.
 
-## Unveiling & Release
+### Unveiling & Release
 
 In April 2014, Apple CEO [Tim Cook](https://en.wikipedia.org/wiki/Tim_Cook) told The Wall Street Journal that the company was planning to launch new product categories that year, but did not reveal any specifics. In June 2014, Reuters reported that production was expected to begin in July for a release in October.
 
@@ -24,9 +27,9 @@ Apple Watch was first unveiled after a classic and ever infamous *"We do have 'o
 
 In comparison to other Apple products and competing smartwatches, marketing of Apple Watch focused more on advertising the device as a fashion accessory; a 12-page advertising spread for Apple Watch in an issue of Vogue focused primarily on the different body and band styles available, and downplayed the technological aspects of it. Apple has also, in particular, focused upon its health and fitness-oriented features, competing against dedicated activity trackers.
 
-{% include image_full.html imageurl="/images/posts/Apple-Watch-In-Car.jpg" title="Apple Watch" caption="Apple watch on the wrist" %}
+{% include image_full.html imageurl="/assets/images/posts/Apple.jpg" title="Apple Watch" caption="Apple watch on the wrist" %}
 
-## Release
+### Release
 
 Pre-orders for Apple Watch began on April 10, 2015, with an official release on April 24.
 

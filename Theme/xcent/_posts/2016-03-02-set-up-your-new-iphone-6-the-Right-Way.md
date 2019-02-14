@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Set Up Your New iPhone 6 the Right Way"
 date:   2016-03-02
-banner_image: iPhone-6.jpg
+banner_image: blog1.jpg
 tags: [tips, tech]
 ---
 The **iPhone 6** and **iPhone 6 Plus** are [smartphones](https://en.wikipedia.org/wiki/Smartphone) designed and marketed by Apple Inc. The devices are part of the iPhone series and were unveiled on September 9, 2014, and released on September 19, 2014. The iPhone 6 and iPhone 6 Plus jointly serve as successors to the iPhone 5C and iPhone 5S.
@@ -15,7 +15,7 @@ Pre-orders of the iPhone 6 and iPhone 6 Plus exceeded four million within its fi
 
 On September 9, 2015, the 128 GB version of both the iPhone 6 and iPhone 6 Plus was discontinued along with the gold version of both phones, but the 16 GB and 64 GB versions of the iPhone 6 and iPhone 6 Plus in silver and space gray remain available for sale at a reduced price due to the release of the [iPhone 6S and iPhone 6S Plus flagship devices](https://en.wikipedia.org/wiki/IPhone_6S).
 
-## History
+### History
 
 Centered around the device's size; the majority of iPhone models have used 3.5-inch displays—which are smaller than screens used by flagship phones from competitors. The last change in size for the iPhone series came with the iPhone 5; the phone and its immediate successors featured a display that was taller, but the same width as prior models, measuring at 4 inches diagonally. Following Apple's loss in smartphone market share to companies producing phones with larger displays reports as early as January 2014 suggested that Apple was preparing to launch new iPhone models with larger, 4.7-inch and 5.5-inch displays. Reports prior to its unveiling also speculated the possibility that Apple would use a new iPhone model to introduce a mobile payments platform using near-field communications—a technology that has been incorporated into many Android phones, but has experienced a low adoption rate among users.
 
@@ -31,7 +31,7 @@ On August 2015 Apple admitted that some iPhone 6 Plus may have faulty cameras th
 
 On September 9, 2015 the 128 GB version of both the iPhone 6 and iPhone 6 Plus was discontinued along with the gold version of both phones, the 16 GB and 64 GB versions of the iPhone 6 and iPhone 6 Plus in silver and space gray remain available for sale at a reduced price due to the release of the iPhone 6S and iPhone 6S Plus flagship devices.
 
-## Specifications
+### Specifications
 
 The design of the iPhone 6 and iPhone 6 Plus are influenced by that of the iPad Air with a glass front that is curved around the edges of the display, and an aluminum rear that contains two plastic strips for the antenna. Both models come in gold, silver, and "space gray" finishes. The iPhone 6 has a thickness of 6.9 millimetres (0.27 in), while the iPhone 6 Plus is 7.1 mm (0.28 in) in thickness; both are thinner than the iPhone 5S and iPhone 5C, with the iPhone 6 being Apple's thinnest phone to date. The most significant changes to the iPhone 6 and iPhone 6 Plus are its displays; both branded as "Retina HD Display" and "ion-strengthened", the iPhone 6 display is 4.7 inches in size with a 16:9 resolution of 1334x750 (326 PPI, minus one row of pixels), while the iPhone 6 Plus includes a 5.5-inch 1920x1080 (1080p) display (401 PPI). The displays use a multiple-domain LCD panel, dubbed "dual-domain pixels"; the RGB pixels themselves are skewed in pattern, so that every pixel is seen from a different angle. This technique helps improve the viewing angles of the display.
 

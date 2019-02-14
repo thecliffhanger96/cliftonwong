@@ -1,19 +1,5 @@
 <aside class="sidebar">
 
-    {% if site.author_bio and site.author_name %}
-    <section class="widget widget-text">
-        <h2 class="widget-title">About {{ site.author_name }}</h2>
-        <p>{{ site.author_bio }}</p>
-    </section><!-- .widget-text -->
-    {% endif %}
-
-
-    {% if site.banner_image %}
-    <section class="widget widget-text">
-        <p><a href="{{ site.banner_url }}" target="_blank"><img src="{{ site.baseurl }}/{{ site.banner_image }}" alt="Optional Banner Ad" /></a></p>
-    </section><!-- .widget-text-->
-    {% endif %}
-
     <section class="widget widget-recent-posts">
         <h2 class="widget-title">Latest Posts</h2>
         <ul class="recent-posts">
@@ -36,3 +22,5 @@
     </section><!-- .widget -->
 
 </aside><!-- .sidebar -->
+
+
