@@ -1191,7 +1191,10 @@ figure {
 }
 
 .blogList-desc h3 {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .blog-viewMore {

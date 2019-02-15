@@ -6,13 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site title
-title: "Xcent"
+title: "Xcent - Jekyll "
 
 # A description of your site for social meta tag, search engines, and feed.xml
 description: "Xcent is a Responsive One Page Personal Template for creative people. Xcent can be used for many purposes starting from minimal portfolios, freelancers, photography and much more."
 
-# Tagline near the site title
-tagline: "Thoughts, stories and ideas."
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl:
@@ -23,33 +21,17 @@ sass:
 # The base hostname & protocol of your site for where absolute urls are needed
 url: "http://beingeorge.com"
 
-# Site navigation - each item must have a title and a url.
-navigation:
-- text: Home
-  url: /
-- text: About
-  url: /about/
-- text: Style Guides
-  url: /style-guide/
-- text: Archives
-  url: /tags/
-
 # The shortname for your Disqus site to enable comments.
 disqus:
 
 # Author information - author info at the bottom of the post
 author_name: "ELLEN DOE"
-author_bio: "Ellen is a designer, photographer, speaker, author of a couple of books about typography and the founder of photo magazine Curious."
 author_url:  "http://beingeorge.com"
-author_location: "Vilnius, Lithuania"
 author_image: /images/authorimage.png
 
 # Sidebar Add banner
 banner_url: "http://beingeorge.com"
 banner_image: images/banner.jpg
-
-# Sidebar newsletter widget - add your form action url for MailChimp signup form here
-# mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 
 # Social links in the site footer
 twitter_username: "username"
@@ -68,8 +50,3 @@ weibo_username: "username"
 paginate: 5
 paginate_path: '/blog/page:num/'
 plugins: [jekyll-paginate]
-
-permalink: pretty
-markdown: kramdown
-kramdown:
-    auto_ids: false

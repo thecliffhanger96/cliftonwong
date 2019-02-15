@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Basic Rules For Walking In The Mountains"
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim..."
 date:   2016-03-19
-banner_image: blog3.jpg
+banner_preview: blog3.jpg
+banner_image: blog-banner.jpg
+category: Passion
 tags: [travel, photography]
 ---
 

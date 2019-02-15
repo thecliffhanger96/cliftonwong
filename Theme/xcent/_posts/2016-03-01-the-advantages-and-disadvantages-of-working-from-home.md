@@ -5,7 +5,7 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 date:   2019-01-01
 banner_preview: blog2.jpg
 banner_image: blog-banner.jpg
-category: Passion
+category: Travel
 tags: [tips, work]
 ---
 
