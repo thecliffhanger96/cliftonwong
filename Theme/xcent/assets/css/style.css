@@ -1335,16 +1335,17 @@ figure {
 	display: inline-block;
 }
 
-.blog-detail-tags ul li a {
-	display: block;
-	padding: 4px 10px;
-	background-color: #f5f5f5;
-	color: #5b5963;
-	margin-right: 5px; 
-	text-transform: capitalize;
+.tags {
+	display: inline-block;
+    padding: 4px 10px;
+    background-color: #f5f5f5;
+    color: #5b5963;
+    margin-right: 5px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
-.blog-detail-tags ul li a:hover {
+.tags:hover {
 	background-color: rgba(253,115,90,1);
 	color: #ffffff;
 }
