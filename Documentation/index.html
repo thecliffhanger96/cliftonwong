@@ -1,268 +1,318 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>XCENT - Jekyll Personal Portfolio Template</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<meta charset="utf-8">
+	<title>XCENT - Personal Portfolio Template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/css/documenter_style.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+html, body {
+	background-color: #FFFFFF;
+	color: #383838;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #383838;
+}
+section table {
+	background-color: #FFFFFF;
+}
+::-moz-selection {
+	background:#444444;
+	color:#DDDDDD;
+}
+::selection {
+	background: #444444;
+	color: #DDDDDD;
+}
+a.brand {
+	background-image: url(assets/images/image_1.png);
+}
+a, a:hover, a:active {
+	color: #0000FF;
+}
+hr {
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #FFFFFF;
+}
+div.navbar-inner, .navbar .nav li ul {
+	background: #DDDDDD;
+	color: #222222;
+}
+a.btn-navbar {
+	background: #DDDDDD;
+	color: #222222;
+}
+.navbar .nav li a {
+	color: #222222;
+	text-shadow: 1px 1px 0px #EEEEEE;
+}
+.navbar .nav li a:hover, .navbar .nav li.active a {
+	text-shadow: none;
+}
+div.navbar-inner ul {
+}
+.navbar .nav > li a {
+	color: #444444;
+}
+.navbar .nav > li a:hover, a.btn-navbar:hover {
+	background: #444444;
+	color: #DDDDDD;
+}
+.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active {
+	background-color: #444444;
+	color: #DDDDDD;
+}
+.navbar .nav li ul li a:hover {
+	background: #444444;
+	color: #DDDDDD;
+}
+.navbar .nav li ul li a:active {
+	background: #444444;
+	color: #DDDDDD;
+}
+.btn-primary {
+	background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+	background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+	background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+	background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+	background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+	background-image: linear-gradient(top, #0088CC, #0044CC);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+	border-color: #0044CC #0044CC #bfbfbf;
+	color: #FFFFFF;
+}
+.btn-primary:hover,  .btn-primary:active,  .btn-primary.active,  .btn-primary.disabled,  .btn-primary[disabled] {
+	background-color: #0044CC;
+}
+#documenter_copyright {
+	display: block !important;
+	visibility: visible !important;
+}
+#theme_options2 img {
+	border: 1px solid #eee;
+	margin: 10px 0;
+	max-width: 100%;
+	padding: 10px;
+}
+</style>
 </head>
-<body>
-    <div class="wrap">
-        <header class="site-header">
-            <h1 class="site-title">XCENT - Jekyll Theme v1.0.5</h1>
-            <p class="site-description">Theme Documentation</p>
-        </header><!-- .site-header -->
-        <div id="main">
-            <div class="intro">
-                <p>First of all a huge thanks for purchasing this theme! If you have any questions that are not answered here, please feel free to email via our user page <a href="http://themeforest.net/user/justgoodthemes">here</a>. Thanks so much!</p>
-                <ul class="byline">
-                    <li><em>Email:</em> <a href="mailto:justgoodthemes@gmail.com">justgoodthemes@gmail.com</a></li>
-                </ul>
-            </div><!-- .intro -->
-            <div id="content" role="main">
-                <section>
-                    <h2 id="toc">Table of Contents</h2>
-                    <ol>
-                        <li><a href="#theme-info"><strong>Theme Information</strong></a>
-                            <ol>
-                                <li><a href="#keyfeatures">Key Features</a></li>
-                                <li><a href="#themestructure">Theme Structure</a></li>
-                            </ol>
-                        </li>
-                        <li><a href="#installation"><strong>Installation</strong></a>
-                            <ol>
-                                <li><a href="#methodOne">Method One</a></li>
-                                <li><a href="#methodTwo">Method Two</a></li>
-                            </ol>
-                        </li>
-                        <li><a href="#themeConfiguration"><strong>Theme Configuration</strong></a>
-                            <ol>
-                                <li><a href="#authorInformation">Author Information</a></li>
-                                <li><a href="#sidebarConfiguration">Sidebar Configuration</a></li>
-                                <li><a href="#socialLinks">Social Links</a></li>
-                             </ol>
-                        </li>
-                        <li><a href="#otherOptions "><strong>Other Theme Options</strong></a>
-                            <ol>
-                                <li><a href="#favicon">Favicon</a></li>
-                                <li><a href="#404page">404 Page</a></li>
-                                <li><a href="#images">Images</a></li>
-                                <li><a href="#siteNavigation">Site Navigation</a></li>
-                            </ol>
-                        </li>                      
-                        <li><a href="#Support"><strong>Support</strong></a></li>
-                        <li><a href="#Updates"><strong>Updates</strong></a></li>
-                        <li><a href="#Credits"><strong>Credits</strong></a></li>
-                    </ol>
-                    <hr />
-                </section>
-                <section>
-                    <h2 id="theme-info">A. Theme Information</h2>
-                    <ul>
-                      <li>Name: <strong>XCENT</strong></li>
-                      <li>Description: Responsive, bold &amp; minimal <a href="https://jekyllrb.com/">Jekyll</a> theme</li>
-                      <li>Current Version: 1.0.5</li>
-                      <li>Creator: <a href="https://justgoodthemes.com">JustGoodThemes.com</a></li>
-                      <li><a href="https://jekyllrb.com/">Jekyll</a> version: 3.2.x</li>
-                    </ul>
-                    <h3 id="keyfeatures">1. Key Features</h3>
-                    <ul>
-                        <li>Mobile first &amp; fully responsive (wide, normal, narrow, mobile)</li>
-                        <li>Retina display ready – all icons are optimized for retina devices</li>
-                        <li>Clean, well commented code, easy to customize</li>
-                        <li>Author information</li>
-                        <li>Tag page support</li>
-                        <li>Code syntax highlighter</li>
-                        <li>Disqus commenting</li>
-                        <li>Sharing post integration</li>
-                        <li>Social media icons</li>
-                        <li>Tag cloud and latest posts widgets</li>
-                        <li>Regular theme updates</li>
-                    </ul>
-                    <h3 id="themestructure">2. Theme Structure</h3>
-                    <p>Here's an overview of the theme file structure.</p>
-<pre><code>.
-├── _config.yml
-├── _includes
-│   ├── disqus.html
-│   ├── footer.html
-│   ├── image_caption.html
-│   ├── image_full.html
-│   └── sidebar.html
-├── _layouts
-│   ├── default.html
-│   ├── page.html
-│   └── post.html
-├── _posts
-│   ├── 2016-03-01-the-advantages-and-disadvantages-of-working-from-home.md
-│   ├── 2016-03-02-set-up-your-new-iphone-6-the-Right-Way.md
-│   ├── 2016-03-19-basic-rules-for-walking-in-the-mountains.md
-│   ├── 2016-03-22-a-week-with-the-apple-watch.md
-│   └── 2018-03-23-Graphic-Designer-On-The-Road.md
-├── _sass
-│   ├── _general.scss
-│   ├── _icons.scss
-│   ├── _reset.scss
-│   └── _variables.scss
-├── _site
-├── css
-│   └── main.scss
-├── fonts
-│   ├── fontawesome.eot
-│   ├── fontawesome.svg
-│   ├── fontawesome.ttf
-│   └── fontawesome.woff
-├── images
-│   ├── 404.jpg
-│   ├── aboutPage.jpg
-│   ├── authorimage.png
-│   ├── banner.jpg
-│   └── posts
-│       ├── Apple-Watch-In-Car.jpg
-│       ├── Apple-Watch.jpg
-│       ├── Desk.jpg
-│       ├── Mountain.jpg
-│       ├── Mountain2.jpg
-│       ├── design.jpg
-│       ├── iPhone-6.jpg
-│       ├── iPhone-In-Hand.jpg
-│       └── road.jpg
-├── js
-│   ├── custom.js
-│   └── plugins.js
-└── tags
-    └── index.html
-├── about.md
-├── style-guide.md
-├── 404.md
-├── favicon.ico
-├── feed.xml
-├── index.html
-    </code></pre>
-                    <hr />
-                </section>
-                <p>The following guide assumes you have some knowledge of the Jekyll platform, including setting up of its prerequisites and a suitable server environment. Further information on this can be found in the official <a href="http://jekyllrb.com/docs/home/">Jekyll Documentation</a>.</p>
-                <section>
-                    <h2 id="installation">B. Installation - <a href="#toc">top</a></h2>
-                    <p>Sites built using Jekyll can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment methods are described below.</p>
-                    <h3 id="methodOne">Method One</h3>
-                    <ul>
-                        <li>Login to your hosting environment via (S)FTP, or preferred file transfer method.</li>
-                        <li>Navigate to the directory you wish to install the blog. If you have an already existing Jekyll install, it's recommended to start a new blog, and transfer the files over to the new install.</li>
-                        <li>Copy the contents of 'bloginn' into the newly created directory.</li>
-                        <li>Edit the <strong>_config.yml</strong> file. More information on the available options can be found in the <strong>Customization</strong> section of this document.</li>
-                        <li>Using SSH, run <strong>jekyll serve</strong> within the directory.</li>
-                    </ul>
-                    <h3 id="methodtwo">Method Two</h3>
-                    <p>Just about any traditional web hosting provider will let you upload files to their servers over FTP. To upload a Jekyll site to a web host using FTP, simply run the <strong>jekyll build</strong> command and copy the generated <strong>_site</strong> folder to the root folder of your hosting account. This is most likely to be the <strong>httpdocs</strong> or <strong>public_html</strong> folder on most hosting providers.</p>
-                </section>
-                <section>
-                    <h2 id="themeConfiguration">C. Theme Configuration - <a href="#toc">top</a></h2>
-                    <p>These options can be found within the <strong>_config.yml</strong> file. More information about Jekyll configuration can be found in the <a href="https://jekyllrb.com/docs/configuration/">Jekyll documentation</a>.</p>
-                    <ul>
-                        <li><strong>title</strong> - the title of your blog, shown in the page and description areas.</li>
-                        <li><strong>description</strong> - a description of your site for social meta tag, search engines, and feed.xml.</li>
-                        <li><strong>tagline</strong> - a tagline shown next to the site title.</li>
-                        <li><strong>baseurl</strong> - the subpath of your site, e.g. /blog, for generating urls. If baseurl is set, you will need to prepend the baseurl to these settings: author image, site navigation, post images.</li>
-                        <li><strong>url</strong> - the base hostname and protocol of your site for where absolute urls are needed.</li>
-                        <li><strong>disqus</strong> - your Disqus shortname. Enter the Disqus shortname here if you wish to have Disqus comments enabled, leave blank to disable comments.</li>
-                        <li><strong>paginate</strong> - the option responsible for posts per page count.</li>
-                    </ul>
-                    <h3 id="authorInformation">Author information</h3>
-                    <ul>
-                        <li><strong>author_name</strong> - name of the post/blog author.</li>
-                        <li><strong>author_bio</strong> - author biography which is shown at the bottom of each post.</li>
-                        <li><strong>author_url</strong> - URL of the author website.</li>
-                        <li><strong>author_location</strong> - author location e.g. London, UK.</li>
-                        <li><strong>author_image</strong> - author profile image, shown at the bottom of each post. Author image can be found in <strong>bloginn/images/authorimage.jpg</strong> location.</li>
-                    </ul>
-                    <h3 id="sidebarConfiguration">Sidebar Configuration</h3>
-                    <h4 id="adBanner">Ad Banner</h4>
-                    <ul>
-                        <li><strong>banner_url</strong> - the banner URL.</li>
-                        <li><strong>banner_image</strong> - the banner image path. Banner image can be found in <strong>bloginn/images/banner.jpg</strong> location.</li>
-                    </ul>
-                   <h4 id="newsletterSignup">Newsletter Signup</h4>
-                   <ul>
-                        <li><strong>mailchimp_url</strong> - your form action URL for MailChimp newsletter signup form.</li>
-                   </ul>
-                   <h3 id="socialLinks">Social Links</h3>
-                   <p>To enable social links in the footer simply enter your social profile username, for example <strong>twitter_username: "justgoodthemes" </strong>. If a field is left blank, the social icon will not be shown.</p>
-                    <ul>
-                        <li>twitter_username</li>
-                        <li>facebook_username</li>
-                        <li>googleplus_username</li>
-                        <li>github_username</li>
-                        <li>codepen_username</li>
-                        <li>dribbble_uername</li>
-                        <li>medium_username</li>
-                        <li>instagram_username</li>
-                        <li>pinterest_username</li>
-                        <li>linkedin_username</li>
-                    </ul>
+<body class="documenter-project-Reale Aste-" data-spy="scroll" id="top">
 
-                    <h4>Weibo Sharing Icon</h4>
+	<!-- Documentation Navbar -->
 
-                    <p>To enable Weibo sharing icon in single post add code below to the <strong>_layouts/post.html</strong> in betwen div <code>&lt;div class="share-post"&gt;&lt;/div&gt;</code> tag.</p>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="#">XCENT Jekyll - Personal Portfolio Template</a>
+				<div class="nav-collapse">
+					<ul class="nav">       
+						<li><a href="#theme_installation" title="Theme Installation">Template Installation</a></li> 
+						<li><a href="#reading_setting" title="Page Included in Nimis">Pages</a></li>
+						<li><a href="#fonts" title="Fonts">Fonts</a></li>
+						<li><a href="#theme_options" title="Source File (CSS)">Source File (CSS)</a></li>
+						<li><a href="#theme_options1" title="Source File (JS)">Source File (JS)</a></li> 		  
+						<li><a href="#theme_options2" title="Customize">Customization</a></li> 		  
+						<li><a href="#thanks" title="Thanks">Thanks</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Navbar --> 
 
-<pre><code>&lt;a class="fa-weibo" target="_blank" href="http://service.weibo.com/share/share.php?url={{ site.url }}{{ page.url }}&appkey=&title={{ page.title | uri_escape }}"&gt;&lt;span class="screen-reader-text"&gt;weibo&lt;/span&gt;&lt;/a&gt;</code></pre>
-                   
-                </section>
-                <section>
-                    <h2 id="otherOptions">D. Other Theme Options - <a href="#toc">top</a></h2>
-                    <h3 id="favicon">Favicon</h3>
-                    <p>To change the favicon, replace favicon.ico file located in the root folder of the theme.</p>
-                    <h3 id="404page">404 page</h3>
-                    <p>The 404 page is located in the root folder of the theme. The image of this page is located in <strong>bloginn/images/404.jpg</strong> location.</p>
-                    <h3 id="images">Images</h3>
-                    <p>Images for pages are located in the <strong>bloginn/images</strong> folder and the images for posts are located in the <strong>bloginn/images/posts</strong> folder.</p>
-                    <h3 id="imageCaption">Image With Caption</h3>
-                    <p>Within your blog posts you can include captions for images. This requires using some HTML markup.</p>
-                    <p>The example below illustrates how to include an image with a caption in a blog post:</p>
-                    <pre><code>{% include image_caption.html imageurl="/images/posts/Apple-Watch-In-Car.jpg" 
-title="Apple Super" caption="supertest" %}</code></pre>
-                    <p>Add the following code into your post/page markdown and change its attributes accordingly.</p>
-                    <h3 id="imagefull">Full Width Image With Caption</h3>
-                    <p>The example below shows how to include a full width image with a caption in a blog post:</p> 
-                    <pre><code>{% include image_full.html imageurl="/images/posts/Apple-Watch-In-Car.jpg" 
-title="Apple" caption="This is caption" %}</code></pre>
-                    <p>Add the following code into your post/page markdown and change its attributes accordingly.</p>
-                    <h2 id="siteNavigation">Site Navigation</h2>
-                    <p>Site navigation can be found in the <strong>_config.yml</strong> file. To add a page to site navigation simply add your new page in markdown format (e.g. newpage.md) in the theme root folder. Next edit your navigation menu located in _config.yml file on line 26. To add a new item in navigation you have to add the item name and url. For example:</p>
-                    <pre><code>
-    navigation:
-    - text: New Page
-      url: /newpage/
-                    </code></pre>
-                </section>
-                <section>
-                    <h2 id="Support">E. Support - <a href="#toc">top</a></h2>
-                    <p>The documentation included provides all the information needed to get the theme installed and customized. However, if you have any questions you can email us at justgoodthemes@gmail.com, and we will be happy to help you.</p>
-                    <p>If you have any bug reports, or feature requests, please let us know!</p>
-                    <hr />
-                </section>
-                <section>
-                    <h2 id="Updates">F. Updates - <a href="#toc">top</a></h2>
-                    <p>We’re dedicated to keeping our <strong>BlogInn</strong> Jekyll theme up to date.</p>
-                    <hr />
-                </section>
-                <section>
-                    <h2 id="Credits">G. Credits - <a href="#toc">top</a></h2>
-                    <p>We have used the following scripts, fonts or other files as listed.</p>
-                    <ul>
-                        <li>Lato font: <a href="https://www.google.com/fonts/specimen/Lato">https://www.google.com/fonts/specimen/Lato</a></li>
-                        <li>Font Awesome icons: <a href=" http://fontawesome.io"> http://fontawesome.io</a></li>
-                        <li>FitVids plugin: <a href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
-                    </ul>
-                    <hr />
-                </section>
-                <p><a href="#toc">Go To Table of Contents</a></p>
-            </div><!-- #content -->
-        </div><!-- #main -->
-        <footer class="site-info">
-            <p>© 2018 Just Good Themes. All rights reserved.</p>
-        </footer><!-- .site-info -->
-    </div><!-- .wrap -->
+	<!-- Main Container Beginning -->
+
+	<div class="container" id="documenter_content"> 
+		<div id="documenter-cover">
+			<div class="masthead">
+				<h1 style="text-align: center">XCENT - Personal Portfolio Template</h1>
+				<p style="text-align: center">created: 10/01/2019</p>     
+				
+			</div>
+			<!-- masthead -->    
+			<div id="intro">
+				<p class="highlight hero-unit">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to <a href="mailto:hello@beingeorge.com" target="_blank" >Contact Us</a></p>
+			</div>
+			<!-- intro -->    
+		</div>
+
+		<section id="theme_installation">
+			<div class="page-header">
+				<h3>Template Installation</h3>
+				<hr class="notop">
+			</div>
+			<h3>FTP Upload:</h3>
+			<p>Sites built using Jekyll can be deployed in a large number of ways due to the static nature of the generated output. A few of the most common deployment methods are described below.</p>
+			<h5>Method One</h5>
+			<ul>
+				<li>Login to your hosting environment via (S)FTP, or preferred file transfer method.</li>
+				<li>Navigate to the directory you wish to install the blog. If you have an already existing Jekyll install, it's recommended to start a new blog, and transfer the files over to the new install.</li>
+				<li>Copy the contents of 'xcent' into the newly created directory.</li>
+				<li>Edit the <code>_config.yml</code> file. More information on the available options can be found in the Customization section of this document.</li>
+				<li>Using SSH, run jekyll serve within the directory.</li>
+			</ul>
+
+			<h5>Method two</h5>
+
+			<p>Just about any traditional web hosting provider will let you upload files to their servers over FTP. To upload a Jekyll site to a web host using FTP, simply run the <code>jekyll build</code> command and copy the generated <code>_site</code> folder to the root folder of your hosting account. This is most likely to be the <code>httpdocs</code> or <code>public_html</code> folder on most hosting providers.</p>
+				
+		</section>
+
+		<section id="reading_setting">
+			<div class="page-header">
+				<h3>Pages</h3>
+				<hr class="notop">
+				<ol>			
+					<ul>			   
+						<li>index.html is for Home page</li>
+						<li>index-slider.html is for Home page with slider images</li>
+<pre>
+	&lt;!-- Slider image --&gt;
+	
+	&lt;div class="carousel-inner"&gt;
+		&lt;div class="item active"&gt;
+			&lt;img src="assets/images/home2.jpg" alt="Los Angeles"&gt;
+		&lt;/div&gt;
+
+		&lt;div class="item"&gt;
+			&lt;img src="assets/images/home1.jpg" alt="Chicago"&gt;
+		&lt;/div&gt;
+
+		&lt;div class="item"&gt;
+			&lt;img src="assets/images/home3.jpg" alt="New York"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</pre>
+						<li>index-video.html is for Home page with youtube video background</li>
+<pre>
+&lt;a id="video" class="youtube-bg" data-property="{videoURL:'https://youtu.be/S4L8T2kFFck',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"&gt;&lt;/a&gt;
+</pre>
+						<li>index-particle.html is for Home page with particles</li>
+						<li>blog.html is for Blog page</li>
+						<li>blog-detail.html is for Blog Detail page</li>
+					</ul>
+				</ol>	  
+			</div>   
+		</section>
+
+		<section id="fonts">
+			<div class="page-header">
+				<h3>Fonts</h3>
+				<hr class="notop">
+			</div>  	
+			<pre>
+				&lt;!-- Google Fonts --&gt;
+				@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900);
+			</pre>
+		</section>
+
+		<section id="theme_options">
+			<div class="page-header">
+				<h3>Source File (CSS)</h3>
+				<hr class="notop">
+			</div>				
+			<pre>	
+				&lt;!-- CSS --&gt;
+				&lt;!-- Bootstrap core CSS --&gt;
+				&lt;link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"&gt;
+
+				&lt;!-- Font Awesome CSS --&gt;
+				&lt;link href="assets/css/all.css" rel="stylesheet" media="screen"&gt;
+
+				&lt;!--[if lte IE 7]&gt;
+				&lt;script src="assets/js/icons-lte-ie7.js"&gt;&lt;/script&gt;
+				&lt;![endif]--&gt;
+
+				&lt;!-- Magnific-popup lightbox --&gt;
+				&lt;link href="assets/css/magnific-popup.css" rel="stylesheet"&gt;
+
+				&lt;!-- Owl Carousel --&gt;
+				&lt;link href="assets/css/owl.theme.css" rel="stylesheet"&gt;
+				&lt;link href="assets/css/owl.carousel.css" rel="stylesheet"&gt;
+
+				&lt;!-- Animate css --&gt;
+				&lt;link href="assets/css/animate.css" rel="stylesheet"&gt;
+
+				&lt;!-- Custom styles CSS --&gt;
+				&lt;link href="assets/css/style.css" rel="stylesheet" media="screen"&gt;
+			</pre>				
+		</section>
+
+		<section id="theme_options1">
+			<div class="page-header">
+				<h3>Source File (JS)</h3>
+				<hr class="notop">
+			</div>
+			<pre>
+				&lt;script src="assets/js/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/jquery.magnific-popup.min.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/jquery.parallax-1.1.3.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/imagesloaded.pkgd.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/jquery.shuffle.min.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/twitterFetcher.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/owl.carousel.min.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/jquery.fitvids.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/jquery.sticky.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/smoothscroll.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/wow.min.js"&gt;&lt;/script&gt;
+				&lt;!-- Google Maps --&gt;
+				&lt;!-- &lt;script src="http://maps.googleapis.com/maps/api/js?key=YOURAPIKEYHERE"&gt;&lt;/script&gt; --&gt;
+				&lt;script src="http://maps.google.com/maps/api/js?sensor=true"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/gmaps.js"&gt;&lt;/script&gt;
+				&lt;!-- Custom scripts --&gt;
+				&lt;script src="assets/js/custom.js"&gt;&lt;/script&gt;
+				&lt;script src="assets/js/custom-shuffle-init.js"&gt;&lt;/script&gt;
+			</pre>							
+		</section>
+
+		<section id="theme_options2">
+			<div class="page-header">
+				<h3>Customization</h3>
+				<hr class="notop">
+			</div>
+			<h4>How to Change Logo</h4>
+			<img src="assets/img/logo.png" alt="">
+			<h4>How to Change Copyright</h4>
+			<img src="assets/img/copyright.png" alt="">
+		</section>
+
+		<section id="css_stucture" style="padding-top: 70px; color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">
+			<div class="page-header" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline;"> &nbsp;</div>
+		</section>
+		<section id="thanks">
+			<div class="page-header">
+				<h3>Thanks</h3>
+				<hr class="notop">
+			</div>
+			<h4 id="thanks_span_style"margin_0px_padding_0px_border_0px_outline_0px_font_weight_700_font_style_inherit_font_family_inherit_vertical_align_baseline"once_again_thankyou_for_for_purchasing_one_of_our_theme_span"><span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Once again thank you for purchasing one of our Templates</span></h4>
+			<h2 style="margin: 0px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);"> Best Regards</h2>
+			<h3 style="margin: 18px 0px 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 26px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);"> beingeorge</h3>
+		</section>
+		<hr />
+		<footer>
+			<p>Copyright <a href="beingeorge.com">beingeorge</a> 2019 made with the <a href="#">Documenter v1.1</a></p>
+		</footer>
+	</div>
+	<!-- /container --> 
+
+<!-- Le javascript
+	================================================== --> 
+	<!-- Placed at the end of the document so the pages load faster --> 
+	<script>document.createElement('section');var duration='500',easing='swing';</script> 
+	<script src="assets/js/jquery.js"></script> 
+	<script src="assets/js/jquery.scrollTo.js"></script> 
+	<script src="assets/js/jquery.easing.js"></script> 
+	<script src="assets/js/scripts.js"></script> 
+	<script src="assets/js/google-code-prettify/prettify.js"></script> 
+	<script src="assets/js/bootstrap-min.js"></script>
 </body>
 </html>

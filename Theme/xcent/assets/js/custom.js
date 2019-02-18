@@ -117,5 +117,14 @@ new WOW().init();
 $('body').fitVids();
 
 
+/* ---------------------------------------------- /*
+* A jQuery mb_YTPlayer init
+/* ---------------------------------------------- */
+
+
+if($('.youtube-bg').length == 1) {
+	$(".youtube-bg").mb_YTPlayer();
+}
+
 
 })(jQuery);
