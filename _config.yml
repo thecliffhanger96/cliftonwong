@@ -6,30 +6,28 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site title
-title: "Xcent - Jekyll"
+title: "cliftonwong"
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: "Xcent is a Responsive One Page Personal Template for creative people. Xcent can be used for many purposes starting from minimal portfolios, freelancers, photography and much more."
+description: "The Personal Website of cliftonwong, featuring his blog and a repository of his Works."
 
 
 # The subpath of your site, e.g. /blog, for generating urls
-baseurl: 
+baseurl: "/cliftonwong"
 
 sass:
   sass_dir: _sass
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: "https://beingeorge.com"
+url: "https://www.github.com/thecliffhanger96/cliftonwong.git"
 
 # The shortname for your Disqus site to enable comments.
 disqus:
 
 # Author information - author info at the bottom of the post
-author_name: "ELLEN DOE"
+author_name: "cliftonwong"
 
 # Social links in the site footer
-twitter_username: "username"
-facebook_username: "username"
-googleplus_username: "+username"
-pinterest_username: "username"
-linkedin_username: "username"
+facebook_username: "clifton.c.wong"
+instagram_username: "the_cliffhanger"
+linkedin_username: "clifton-wong"
